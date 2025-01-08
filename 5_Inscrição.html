@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content= "width=device-width, initial-scale= 1.0">
+<section>
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="css/inscrição.css">
+    <title>Haltere seus Hábitos</title>
+    <base target="_blank"/>
+    <link href="https://fonts.googleapis.com/css?family=Stoke" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <address class="ender">
+            <p>Avenida do Puxa Ferro, 12</p>
+            <p>Tel: (21) 91234-5678</p>
+            <p><a href="mailto:contato@halterhabit.com.br">contato@halterhabit.com.br</a></p>
+        </address>
+        <img class="imgTop" src="Imagens/HalteresSeusHabitosTopo.png"/>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="2_Apresentacao.html">Apresentação</a></li>
+            <li><a href="3_Planos.html">Planos</a></li>
+            <li><a href="4_Equipamentos.html">Equipamentos</a></li>
+            <li><a href="5_Inscricao.html">Inscrição</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form class="formul">
+            <fieldset class="fsPessoal">
+                <legend>Dados Pessoais</legend>
+                <div class="linhaNome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" class="inpNome" />
+                </div>
+                <div class="linhaDados">
+                    <label for="telefone" class="ColEsqPes">Telefone:</label>
+                    <input type="text" id="telefone" class="inpTelef" />
+
+                    <label for="celular" class="ColEsqPes">Celular:</label>
+                    <input type="text" id="celular" class="inpTelef" />
+
+                    <fieldset class="fsGenero">
+                        <legend>Gênero</legend>
+                        <input type="radio" id="masculino" name="genero" value="Masculino" checked />
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="feminino" name="genero" value="Feminino" />
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="outro" name="genero" value="Outro" />
+                        <label for="outro">Outro</label>
+                    </fieldset>
+
+                    <label for="idade" class="ColEsqPes">Idade:</label>
+                    <input type="number" id="idade" value="18" min="1" max="99"/>
+                </div>
+            </fieldset>
+
+            <fieldset class="fsMatricula">
+                <legend>Matrícula</legend>
+                <label for="matriculado" class="ColEsqPes">Matriculado?</label>
+                <input type="checkbox" id="matriculado"/>
+
+                <label for="numero" class="ColDirMat">Número:</label>
+                <input type="text" id="numero" class="inpMat"/>
+
+                <label for="atividade" class="ColEsqPes">Atividade:</label>
+                <select id="atividade">
+                    <option>-----</option>
+                    
+                </select>
+
+                <label for="plano" class="ColDirMat">Plano:</label>
+                <select id="plano">
+                    <option>-----</option>
+                    
+                </select>
+            </fieldset>
+
+            <fieldset class="fsCartao">
+                <legend>Cartão</legend>
+                <div class="ColLabCrd">
+                    <label>Bandeira:</label>
+                    <input type="radio" id="visa" name="bandeira" value="Visa" checked />
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="master" name="bandeira" value="Master" />
+                    <label for="master">Master</label>
+                    <input type="radio" id="elo" name="bandeira" value="Elo" />
+                    <label for="elo">Elo</label>
+                </div>
+
+                <div class="ColValTot">
+                    <label for="validade">Validade:</label>
+                    <input type="text" id="validade" class="numDD" value="10" /> /
+                    <input type="text" id="ano" class="numQD" value="2024" />
+                </div>
+
+                <label for="numeroCartao" class="ColLabCrd">Número:</label>
+                <input type="text" id="numeroCartao" class="inpNCC" />
+
+                <label for="valor" class="ColValTot">Valor R$:</label>
+                <input type="text" id="valor" class="inpVal" />
+            </fieldset>
+
+            <div class="entDireita">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
+
